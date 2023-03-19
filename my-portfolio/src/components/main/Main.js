@@ -5,29 +5,31 @@ import figma from "../../images/figma.png";
 // import dots from "../../images/dots.png";
 // import js from "../../images/js.png";
 // import html from "../../images/html.png";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
-import { DiSass, DiJavascript1 } from "react-icons/di";
 
 function Main() {
   return (
     <div className={style.main_container}>
       <div className={style.left_content}>
-        <h5>FRONT-END DEVELOPER ENGINEER</h5>
-        <h1>Arvi Jake Fernicol De Guzman</h1>
+        <div className={style.job_description}>FRONT-END DEVELOPER ENGINEER</div>
+        <div className={style.profile_name}>Arvi Jake Fernicol De Guzman</div>
         <p>
           "If debugging is the process of removing software bugs, then
           programming must be the process of putting them in"
         </p>
         <ul>
           <li>
-            <AiFillGithub />
+            <a href="https://github.com/WoChiMao"><AiFillGithub /></a>
           </li>
           <li>
-            <AiFillLinkedin />
+          <a href="https://www.linkedin.com/in/arvi-jake-de-guzman-256873232/"><AiFillLinkedin /></a>
           </li>
           <li>
             <SiGmail />
+          </li>
+          <li>
+            <AiFillFacebook />
           </li>
         </ul>
       </div>

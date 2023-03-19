@@ -8,8 +8,8 @@
 .app {
   display: flex;
   flex-direction: column;
-  width: 90vw;
-  margin-left: 5vw;
+  width: 90%;
+  margin-left: 5%;
 }
 .nav {
   display: flex;
@@ -24,35 +24,25 @@
       }
   }
 }
-@keyframes move-left {
-  from {
-    left: 10px;
-  }
-  to {
-    left: 0;
-  }
-}
 .main_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
   .left_content {
-      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start; 
+      margin-top: 83px; 
       width: 50%;
-      h5{
+      height: 60%;
+      .job_description{
           font-size: 21px;
           font-weight: normal;
-          animation: move-left 3s ease-in;
-          position: absolute;
       }
-      h1{
+      .profile_name{
           width: 90%;
           font-size: 70px;
-          font-family: 'Raleway';
       }
       p {
           border-left: 1px solid;
@@ -60,7 +50,7 @@
           padding: 15px;
           width: 60%;
           opacity: .5;
-          line-height: 30px;
+          line-height: 25px;
       }
       ul {
           display: flex;
@@ -143,5 +133,42 @@ transform: translatey(0px);
       z-index: -9;
       animation: float 9s ease-in-out infinite;
       background: none;
+  }
+}
+
+// iPad pro
+@media screen and ( max-width: 1110px){
+  .left_content{
+    margin-top: 55px !important;
+    .profile_name{
+      font-size: 50px !important;
+      width: 80% !important;
+    }
+  }
+  
+  .right_content {
+    img {
+        height: 400px !important;
+    }
+  }
+}
+@media screen and ( max-width: 810px){
+  .main_container {
+    margin-top: 50px !important;
+    .left_content {
+      width: 65% !important;
+      margin-top: 40px !important;
+      .profile_name{
+        color: green;
+        font-size: 50px !important;
+        width: 80% !important;
+      }
+      
+    }
+    .right_content {
+      img {
+          height: 300px !important;
+      }
+    }
   }
 }
