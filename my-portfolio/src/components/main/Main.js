@@ -1,7 +1,7 @@
 import React from "react";
-import style from "../../common.module.scss";
+import style from "../sass/common.module.scss";
 import img from "../../images/image.png";
-import figma from "../../images/figma.png";
+// import figma from "../../images/figma.png";
 // import dots from "../../images/dots.png";
 // import js from "../../images/js.png";
 // import html from "../../images/html.png";

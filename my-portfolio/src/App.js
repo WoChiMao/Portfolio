@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from './components/main/Main'
-import style from './common.module.scss'
+import style from './components/sass/common.module.scss'
 import Nav from './components/navigation/Nav'
 import About from './components/about/About'
 import { Route, Routes } from 'react-router-dom'
